@@ -17,25 +17,37 @@ body{
 
 .text-overlay {
     position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff; /* Text color */
-    text-align: center; /* Adjust as needed */
+    color: #fff;
+    text-align: center;
 }
 .text-overlay2 {
     position: absolute;
-    top: 20%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
+    top: 20%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff; /* Text color */
-    text-align: center; /* Adjust as needed */
+    color: #fff;
+    text-align: center;
 }
 .text-overlay3 {
     position: absolute;
-    top: 75%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
+    top: 75%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff; /* Text color */
-    text-align: center; /* Adjust as needed */
+    color: #fff;
+    text-align: center;
+}
+header.nav a:first-child {
+
+    color: #ff0000;
+    font-weight: bold;
+
+}
+
+header.nav ul li a {
+
+    color: #000000;
+
 }
