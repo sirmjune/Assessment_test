@@ -1,5 +1,6 @@
 body{
     /*width: 50%;*/
+    font-family: 'Raleway', sans-serif;
     margin: 20px auto;
     padding: 20px;
 }
@@ -39,15 +40,34 @@ body{
     color: #fff;
     text-align: center;
 }
-header.nav a:first-child {
 
-    color: #ff0000;
+header.nav ul li a {
+    padding: 0;
+    color: #e8a14d;
     font-weight: bold;
 
 }
+ul.nav li {
+    margin-right: 20px;
+}
+.custom-carousel-image {
+    height: 400px;
+}
+.carousel-caption {
 
-header.nav ul li a {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+}
 
-    color: #000000;
-
+.carousel-caption h5 {
+    margin-bottom: 0;
+    font-size: 45px;
+}
+.carousel-caption p {
+    text-align: center ;
+}
+.heading{
+    padding: 20px;
 }
