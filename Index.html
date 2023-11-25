@@ -17,7 +17,7 @@
 
 </head>
 <body>
-
+<div class="max-width-container">
 <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 nav">
     <div class="col-md-3 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
@@ -69,6 +69,7 @@
         </div>
     </div>
 </div>
+<!--    carousel-->
 <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="border-radius: 50%; width: 10px; height: 10px;"></button>
@@ -104,23 +105,25 @@
 </div>
 
 
-<div class="modal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container check-in">
+
+        <div class="row border check-in-tbl">
+            <div class="col-sm">
+                <h6>Where You Want to go</h6>
             </div>
-            <div class="modal-body">
-                <p>Modal body text goes here.</p>
+            <div class="col-sm ">
+                <h6>Check-in</h6>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="col-sm ">
+                <h6>Check-out</h6>
+            </div>
+            <div class="col-sm">
+
+                <button class="btn btn-primary rounded px-4" type="button" style="font-weight: bold; width:180px ">EXPLORE NOW</button>
+
             </div>
         </div>
     </div>
-</div>
 
 <div class="row" style="margin-top: 50px">
     <div class="col-sm-3">
@@ -199,21 +202,21 @@
 <div class="">
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-            <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                    <h3>Singapore</h3>
+        <div class="col px-3">
+            <div class="">
+                <img src="images/singapole.png" width="100%" height="225" class="rounded" alt="singapole">
+                <div class="py-3">
+                    <h3 style="font-weight: bold">Singapore</h3>
                     <p class="card-text">Singapore, officially the Republic of Singapore, is a
                         sovereign island city-state in maritime Southeast</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <i class="bi bi-building"></i>&nbsp;&nbsp;
-                            <i class="bi bi-hourglass-top"></i></i>&nbsp;&nbsp;
-                            <i class="bi bi-airplane-engines"></i>
+                            <i class="bi bi-building rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-hourglass-top rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-airplane-engines rounded-circle icon"></i>
 
                         </div>
-                        <small class="text-body-secondary">€ 10,000</small>
+                        <small class="text-body-secondary" style="font-weight: bold">€ 10,000</small>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
@@ -225,21 +228,21 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                    <h3>Thailand</h3>
+        <div class="col px-3">
+            <div class="">
+                <img src="images/thailand.png" width="100%" height="225" class="rounded" alt="thailand">
+                <div class="py-3">
+                    <h3 style="font-weight: bold">Thailand</h3>
                     <p class="card-text">Thailand is a Southeast Asian country. It's known
                         for tropical beaches, opulent royal palaces</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <i class="bi bi-building"></i>&nbsp;&nbsp;
-                            <i class="bi bi-hourglass-top"></i></i>&nbsp;&nbsp;
-                            <i class="bi bi-airplane-engines"></i>
+                            <i class="bi bi-building rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-hourglass-top rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-airplane-engines rounded-circle icon"></i>
 
                         </div>
-                        <small class="text-body-secondary">€ 10,000</small>
+                        <small class="text-body-secondary"><strong>€ 10,000</strong></small>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
@@ -251,21 +254,21 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                    <h3>Paris</h3>
+        <div class="col px-3">
+            <div class="">
+                <img src="images/paris.png" width="100%" height="225" class="rounded" alt="paris">
+                <div class="py-3">
+                    <h3 style="font-weight: bold">Paris</h3>
                     <p class="card-text">Paris, France's capital, is a major European city and
                         a global center for art, fashion, gastronomy and</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <i class="bi bi-building"></i>&nbsp;&nbsp;
-                            <i class="bi bi-hourglass-top"></i></i>&nbsp;&nbsp;
-                            <i class="bi bi-airplane-engines"></i>
+                            <i class="bi bi-building rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-hourglass-top rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-airplane-engines rounded-circle icon"></i>
 
                         </div>
-                        <small class="text-body-secondary">€ 10,000</small>
+                        <small class="text-body-secondary" style="font-weight: bold">€ 10,000</small>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
@@ -278,21 +281,21 @@
             </div>
         </div>
 
-        <div class="col">
-            <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                    <h3>New Zealand</h3>
+        <div class="col px-3 py-5">
+            <div class="">
+                <img src="images/new%20zealand.png" width="100%" height="225" class="rounded">
+                <div class="py-3">
+                    <h3 style="font-weight: bold">New Zealand</h3>
                     <p class="card-text">New Zealand is an island country in the
                         southwestern Pacific Ocean. It consists of two</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <i class="bi bi-building"></i>&nbsp;&nbsp;
-                            <i class="bi bi-hourglass-top"></i></i>&nbsp;&nbsp;
-                            <i class="bi bi-airplane-engines"></i>
+                            <i class="bi bi-building rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-hourglass-top rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-airplane-engines rounded-circle icon"></i>
 
                         </div>
-                        <small class="text-body-secondary">₹ 38,800</small>
+                        <small class="text-body-secondary" style="font-weight: bold">₹ 38,800</small>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
@@ -304,21 +307,21 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                    <h3>Bora Bora</h3>
+        <div class="col px-3 py-5">
+            <div class="">
+                <img src="images/bora%20bora.png" width="100%" height="225" class="rounded" alt="bora">
+                <div class="py-3">
+                    <h3 style="font-weight: bold">Bora Bora</h3>
                     <p class="card-text">Bora Bora is a small South Pacific island northwest
                         of Tahiti in French Polynesia. Surrounded by sand</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <i class="bi bi-building"></i>&nbsp;&nbsp;
-                            <i class="bi bi-hourglass-top"></i></i>&nbsp;&nbsp;
-                            <i class="bi bi-airplane-engines"></i>
+                            <i class="bi bi-building rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-hourglass-top rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-airplane-engines rounded-circle icon"></i>
 
                         </div>
-                        <small class="text-body-secondary">₹ 38,800</small>
+                        <small class="text-body-secondary" style="font-weight: bold">₹ 38,800</small>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
@@ -330,21 +333,21 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                    <h3>London</h3>
+        <div class="col px-3 py-5">
+            <div class="">
+                <img src="images/london.png" width="100%" height="225" class="rounded" alt="london">
+                <div class="py-3">
+                    <h3 style="font-weight: bold">London</h3>
                     <p class="card-text">London, the capital of England and the United
                         Kingdom, is a 21st-century city with history</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <i class="bi bi-building"></i>&nbsp;&nbsp;
-                            <i class="bi bi-hourglass-top"></i></i>&nbsp;&nbsp;
-                            <i class="bi bi-airplane-engines"></i>
+                            <i class="bi bi-building rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-hourglass-top rounded-circle icon"></i>&nbsp;&nbsp;
+                            <i class="bi bi-airplane-engines rounded-circle icon"></i>
 
                         </div>
-                        <small class="text-body-secondary">₹ 38,800</small>
+                        <small class="text-body-secondary" style="font-weight: bold">₹ 38,800</small>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
@@ -460,5 +463,6 @@
         <li class="ms-3 text-primary"><i class="bi bi-instagram rounded-circle"></i></li>
     </ul>
 </footer>
+</div>
 </body>
 </html>

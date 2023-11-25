@@ -1,8 +1,14 @@
-body{
+body {
     /*width: 50%;*/
     font-family: 'Raleway', sans-serif;
     margin: 20px auto;
     padding: 20px;
+}
+.max-width-container {
+    max-width: 1786px;
+    width: 100%;
+
+
 }
 
 .footer{
@@ -70,4 +76,18 @@ ul.nav li {
 }
 .heading{
     padding: 20px;
+}
+.check-in{
+    padding: 40px;
+
+}
+
+.check-in .check-in-tbl{
+    height: 70px;
+    width: 750px;
+}
+.icon{
+    background-color: #1c4961;
+    color: white;
+
 }
