@@ -77,17 +77,28 @@ ul.nav li {
 .heading{
     padding: 20px;
 }
-.check-in{
-    padding: 40px;
 
-}
-
-.check-in .check-in-tbl{
-    height: 70px;
-    width: 750px;
+.check-in-tbl{
+    height: 75px;
+    width: 800px;
 }
 .icon{
     background-color: #1c4961;
     color: white;
 
+}
+
+
+.active-purple input.form-control[type=text] {
+    border-bottom: 1px solid #ce93d8;
+    box-shadow: 0 1px 0 0 #ce93d8;
+}
+
+.col-sm .pipe {
+    width:1px;
+    height: 60px;
+    background-color: #000;
+    border-left: 1px solid #fff;
+    padding: 0.5px;
+    margin-top: 5px;
 }
