@@ -102,3 +102,8 @@ ul.nav li {
     padding: 0.5px;
     margin-top: 5px;
 }
+
+.nav-link.active {
+    color: blue; /* Change the active tab color as needed */
+    font-weight: bold;
+}

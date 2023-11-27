@@ -116,7 +116,7 @@
 
 
 
-            <div class="row border rounded check-in-tbl ">
+            <div class="row border rounded check-in-tbl p-1 ">
                 <div class="col-sm">
                     <h6 style="font-weight: bold">Where You Want to go</h6>
                     <!-- Search form -->
@@ -227,25 +227,45 @@
 <div>
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="color: black; font-weight: bold;">Asia</a>
+            <a class="nav-link active" aria-current="page"  href="javascript:void(0);" onclick="switchTab('tabAsia'); toggleProgressBar('progressBar1')" style="color: black; font-weight: bold;">Asia</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" style="color: black; font-weight: bold;">Europa</a>
+            <a class="nav-link" href="javascript:void(0);" onclick="switchTab('tabEurope'); toggleProgressBar('progressBar2')" style="color: black; font-weight: bold;">Europe</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" style="color: black; font-weight: bold;">Africa</a>
+            <a class="nav-link" href="javascript:void(0);" onclick="switchTab('tabAfrica'); toggleProgressBar('progressBar3')" style="color: black; font-weight: bold;">Africa</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" aria-disabled="true" style="color: black; font-weight: bold;">America</a>
+            <a class="nav-link" aria-disabled="true"href="javascript:void(0);" onclick="switchTab('tabAmerica'); toggleProgressBar('progressBar4')" style="color: black; font-weight: bold;">America</a>
         </li>
     </ul>
 
-    <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="height: 3px; margin-left: 468px; margin-right: 450px">
+    <!-- Progress Bar 1 -->
+    <div id="progressBar1" class="progress" role="progressbar" aria-label="Progress" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="height: 3px; margin-left: 468px; margin-right: 450px">
         <div class="progress-bar" style="width: 15%;"></div>
+    </div>
+    <!-- Progress Bar 2 -->
+    <div id="progressBar2" class="progress" role="progressbar" aria-label="Progress" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="height: 3px; margin-left: 468px; margin-right: 450px; display: none;">
+        <div class="progress-bar" style="width: 15%; margin-left: 50px"></div>
+    </div>
+
+    <!-- Progress Bar 3 -->
+    <div id="progressBar3" class="progress" role="progressbar" aria-label="Progress" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="height: 3px; margin-left: 468px; margin-right: 450px; display: none;">
+        <div class="progress-bar" style="width: 15%; margin-left: 100px"></div>
+    </div>
+    <!-- Progress Bar 4 -->
+    <div id="progressBar4" class="progress" role="progressbar" aria-label="Progress" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="height: 3px; margin-left: 468px; margin-right: 450px; display: none;">
+        <div class="progress-bar" style="width: 15%; margin-left: 150px"></div>
     </div>
     <br>
 </div>
-<div class="">
+    <!-- Tab content containers -->
+    <div id="tabAsia" class="tab-content text-center" style="font-weight: bold">Content for Asia tab</div>
+    <div id="tabEurope" class="tab-content text-center" style="display: none; font-weight: bold">Content for Europe tab</div>
+    <div id="tabAfrica" class="tab-content text-center" style="display: none; font-weight: bold">Content for Africa tab</div>
+    <div id="tabAmerica" class="tab-content text-center" style="display: none; font-weight: bold">Content for America tab</div>
+
+    <div class="">
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col px-3">
@@ -457,33 +477,49 @@
     <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="shadow p-3 mb-5 bg-body rounded">
             <div class="card-body">
-                <h5 class="card-title">"</h5>
-                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br>
+<!--                <h5 class="card-title">"</h5>-->
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br>
                     do eiusmod tempor incididunt ut labore et dolore magna<br>
                     aliqua. Ultricies mi eget mauris pharetra. Amet risus nullam<br>
                     eget felis eget nunc lobortis. Purus in massa tempor nec.<br>
                     Porta nibh venenatis cras sed. Viverra ipsum nunc aliquet</p>
-                <div class="card-body">
-                    <img src="images/avatar.jpg" class="img-fluid rounded-circle" style="width: 50px; height: 50px;" alt="Avatar">
-                    <a href="#" class="card-link">Mario Rossi</a>
-                    <a href="#" class="card-link">Manager</a>
+                <div class="card-body py-0">
+                    <div class="d-flex flex-row bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">
+                            <img src="images/avatar.jpg" class="img-fluid rounded-circle" style="width: 50px; height: 50px;" alt="Avatar">
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p style="font-weight: bold; margin-bottom: 0">Mario Rossi</p>
+                            <p>Manager</p>
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
+
     <div class="col-sm-6">
         <div class="shadow p-3 mb-5 bg-body rounded">
             <div class="card-body">
-                <h5 class="card-title">"</h5>
+<!--                <h5 class="card-title">"</h5>-->
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
                     sed do eiusmod tempor incididunt ut labore et dolore<br>
                     magna aliqua. Ultricies mi eget mauris pharetra. Amet risus<br>
                     nullam eget felis eget nunc lobortis. Purus in massa<br>
                     tempor nec. Porta nibh venenatis cras sed. Viverra ipsum</p>
-                <div class="card-body">
-                    <img src="images/avatar.jpg" class="img-fluid rounded-circle" style="width: 50px; height: 50px;" alt="Avatar">
-                    <a href="#" class="card-link">Luca Verdi</a>
-                    <a href="#" class="card-link">Developer</a>
+                <div class="card-body py-0">
+                    <div class="d-flex flex-row bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">
+                            <img src="images/avatar.jpg" class="img-fluid rounded-circle" style="width: 50px; height: 50px;" alt="Avatar">
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <p style="font-weight: bold; margin-bottom: 0">Luca Verdi</p>
+                            <p>Developer</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -492,10 +528,10 @@
 
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer rounded">
     <div class="col-md-4 d-flex align-items-center">
-        <span class="mb-3 mb-md-0 text-body-secondary">Copyright © 2021 Proto Web Site Test. All rights reserved</span>
+        <span class="mb-3 mb-md-0 text-body-secondary" style="font-weight: bold; font-size: 15px">Copyright © 2021 Proto Web Site Test. All rights reserved</span>
     </div>
 
-    <ul class="nav col-md-4 justify-content-center">
+    <ul class="nav col-md-4 justify-content-center" style="font-weight: bold; font-size: 15px">
         <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Places</a></li>
@@ -510,5 +546,38 @@
     </ul>
 </footer>
 </div>
+
+<!--switch tabs-->
+<script>
+    function toggleProgressBar(progressBarId) {
+        // Hide all progress bars
+        document.querySelectorAll('.progress').forEach(function(progressBar) {
+            progressBar.style.display = 'none';
+        });
+
+        // Show the selected progress bar
+        document.getElementById(progressBarId).style.display = 'block';
+    }
+
+    function switchTab(tabId,progressBarId) {
+        // Hide all tab content
+        document.querySelectorAll('.tab-content').forEach(function(tabContent) {
+            tabContent.style.display = 'none';
+        });
+
+        // Remove active class from all nav links
+        document.querySelectorAll('.nav-link').forEach(function(navLink) {
+            navLink.classList.remove('active');
+        });
+
+        // Show the selected tab content
+        document.getElementById(tabId).style.display = 'block';
+
+        // Add active class to the clicked nav link
+        event.target.classList.add('active');
+
+    }
+
+</script>
 </body>
 </html>
